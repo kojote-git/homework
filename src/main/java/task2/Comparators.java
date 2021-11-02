@@ -8,12 +8,11 @@ public abstract class Comparators {
     }
 
     public static Comparator<Student> byName() {
-        // TODO
-        return null;
+        return Comparator.comparing(Student::getName);
     }
 
     public static Comparator<Student> byCourse() {
-        // TODO
-        return null;
+        return Comparator.comparing(Student::getCourse);
     }
+
 }

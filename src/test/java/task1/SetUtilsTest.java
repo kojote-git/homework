@@ -50,4 +50,5 @@ public class SetUtilsTest {
         assertTrue(result.contains(2));
         assertTrue(result.contains(3));
     }
+
 }
