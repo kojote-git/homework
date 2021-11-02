@@ -8,12 +8,22 @@ public abstract class Comparators {
     }
 
     public static Comparator<Student> byName() {
-        // TODO
-        return null;
+        Comparator<Student> res = new Comparator<Student>() {
+            @Override
+            public int compare(Student s1, Student s2) {
+                return s1.getName().compareTo(s2.getName());
+            }
+        };
+        return res;
     }
 
     public static Comparator<Student> byCourse() {
-        // TODO
-        return null;
+        Comparator<Student> res  = new Comparator<Student>() {
+            @Override
+            public int compare(Student s1, Student s2) {
+                return s1.getCourse().compareTo(s2.getCourse());
+            }
+        };
+        return res;
     }
 }
